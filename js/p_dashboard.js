@@ -72,7 +72,7 @@ if (isLoggedIn != "true") {
   window.location.href = "p_login.html";
 }
 
-document.getElementById("pWelcome").innerText = "Welcome User";
+document.getElementById("pWelcome").innerText = "Welcome Patient";
 
 document.getElementById("made-req").innerText = 0;
 document.getElementById("pen-req").innerText = 0;

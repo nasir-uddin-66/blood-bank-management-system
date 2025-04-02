@@ -79,10 +79,10 @@
 //   localStorage.setItem(patientInfo.email, JSON.stringify(patientInfo));
 // });
 
-document.getElementById("pWelcome").innerText = "Welcome User";
+document.getElementById("pWelcome").innerText = "Welcome Patient";
 
 //blood request form
-document.getElementById("br-email").value = "patient@gmail.com";
+document.getElementById("br-email").value = "patient@gmail.com";  // will  be added dynamically
 
 document.getElementById("br-form").addEventListener("submit", (event) => {
   event.preventDefault();

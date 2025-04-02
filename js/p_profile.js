@@ -37,11 +37,9 @@
 //   }
 // });
 
+document.getElementById("pWelcome").innerText = "Welcome Patient";
 
-
-// user information
-
-document.getElementById("pWelcome").innerText = "Welcome User";
+// user information (dynamic)
 
 document.getElementById("p-profile-name").innerText = "User";
 document.getElementById("p-profile-mail").innerText = "User@mail.com";
@@ -63,9 +61,9 @@ document.querySelector(".cancelBtn").addEventListener("click", (e) => {
   document.getElementById("profile-box2").style.left = "800px";
 });
 
-// update info
+// update info (dynamic)
 let pUpdateEmail = document.querySelector("#pUpdateEmail");
-pUpdateEmail.value = "patient@gmail.com";
+pUpdateEmail.value = "patient@gmail.com"; // will  be added dynamically
 
 document.querySelector("#pUpdateForm").addEventListener("submit", (e) => {
   e.preventDefault();
@@ -90,4 +88,3 @@ document.querySelector("#pUpdateForm").addEventListener("submit", (e) => {
     alert("Input all the fields!");
   }
 });
-

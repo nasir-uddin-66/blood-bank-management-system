@@ -1,3 +1,5 @@
+document.getElementById("pWelcome").innerText = "Welcome Patient";
+
 // sample data will be replaced by backend data
 const sampleData = [
   {
