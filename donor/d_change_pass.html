@@ -26,11 +26,11 @@
     <link rel="icon" href="/assets/logo.png" />
     <title>Quantum Blood Lab</title>
   </head>
-  <body style="overflow: hidden">
+  <body class="overflow-hidden">
     <!-- navbar start -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary nav_bar">
       <div class="container-fluid ps-5 pe-5 nav_container">
-        <a class="navbar-brand ms-5" href="#" id="pWelcome"
+        <a class="navbar-brand ms-5" href="#" id="dWelcome"
           >Quantum Blood Lab <i class="fa-solid fa-droplet"></i
         ></a>
 
@@ -51,27 +51,29 @@
               class="nav-link"
               id="p-dash-txt"
               aria-current="page"
-              href="/patient/p_dashboard.html"
+              href="/donor/d_dashboard.html"
               >Dashboard</a
             >
           </li>
           <li class="nav-item p-2 border-bottom border-secondary">
-            <a class="nav-link" href="/patient/p_profile.html">Profile</a>
+            <a class="nav-link" href="/donor/d_profile.html">Profile</a>
           </li>
           <li class="nav-item p-2 border-bottom border-secondary">
-            <a class="nav-link" href="/patient/p_blood_req.html"
-              >Blood Request</a
+            <a class="nav-link" href="/donor/d_donate_blood.html"
+              >Donate Blood</a
             >
           </li>
 
           <li class="nav-item p-2 border-bottom border-secondary">
-            <a class="nav-link" href="/patient/p_request_history.html"
-              >Request History</a
+            <a class="nav-link" href="/donor/d_donation_history.html"
+              >Donation History</a
             >
           </li>
 
           <li class="nav-item p-2 border-bottom border-secondary">
-            <a class="nav-link" href="/patient/p_change_pass.html">Change Password</a>
+            <a class="nav-link" href="/donor/d_change_pass.html"
+              >Change Password</a
+            >
           </li>
         </ul>
       </div>
@@ -79,24 +81,50 @@
 
       <!-- main content s -->
       <div class="main-content">
+        <!-- change password start -->
+        <div
+          class="container d-flex justify-content-center align-items-center mt-5"
+        >
+          <div class="card p-3" style="width: 23rem">
+            <div class="card-body">
+              <h5 class="card-title text-center">Change Password</h5>
+              <form id="dChangePassForm">
 
-        <div class="text-center fs-4 text-muted mb-4 fw-bold">Blood Request History</div>
+                <div class="my-4">
+                  <label for="dChangePass" class="form-label">New Password:</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="dChangePass"
+                    name="dChangePass"
+                    required
+                  />
+                </div>
 
-        <table class="m-auto table border">
-          <thead class="table-dark">
-            <tr>
-              <th>Date</th>
-              <th>Blood Group</th>
-              <th>Quantity (in ml)</th>
-              <th>Reason</th>
-              <th>Status</th>
-            </tr>
-          </thead>
+                <div class="mt-4 mb-5">
+                  <label for="dConfirmChangePass" class="form-label"
+                    >Confirm New Password:</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="dConfirmChangePass"
+                    name="dConfirmChangePass"
+                    required
+                  />
+                </div>
 
-          <tbody id="pHistoryTable">
-            <!-- data will be added dynamically -->
-          </tbody>
-        </table>
+                <button type="submit" class="btn btn-outline-primary w-100">
+                  Change &check;
+                </button>
+              </form>
+              
+            </div>
+
+          </div>
+
+        </div>
+        <!-- change password end -->
       </div>
       <!-- main content e  -->
     </div>
@@ -109,7 +137,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- bootstrap cdn e-->
-     <script src="/js/logout.js"></script>
-    <script src="/js/p_request_history.js"></script>
+    <script src="/js/logout.js"></script>
+    <script src="/js/donor/d_change_pass.js"></script>
   </body>
 </html>

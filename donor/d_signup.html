@@ -42,11 +42,11 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/patient/p_login.html">Patient</a>
+              <a class="nav-link" href="/patient/p_login.html">Patient</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="/donor/d_login.html">Donor</a>
+              <a class="nav-link active" href="/donor/d_login.html">Donor</a>
             </li>
 
             <li class="nav-item">
@@ -61,53 +61,53 @@
     </nav>
     <!-- navbar end -->
 
-    <!-- patient signup s-->
+    <!-- donor signup s-->
     <div
       class="container d-flex justify-content-center align-items-center mt-1"
     >
       <div class="card p-3" style="width: 24rem">
         <div class="card-body">
-          <h5 class="card-title text-center">Patient Sign Up</h5>
-          <form id="pSignupForm">
+          <h5 class="card-title text-center">Donor Sign Up</h5>
+          <form id="dSignupForm">
             <div class="mb-2">
-              <label for="pUsername" class="form-label">Username</label>
+              <label for="dUsername" class="form-label">Username</label>
               <input
                 type="text"
                 class="form-control"
-                id="pUsername"
-                name="pUsername"
+                id="dUsername"
+                name="dUsername"
                 required
               />
             </div>
             <div class="mb-3">
-              <label for="pEmail" class="form-label">Email</label>
+              <label for="dEmail" class="form-label">Email</label>
               <input
                 type="email"
                 class="form-control"
-                id="pEmail" 
-                name="pEmail"
+                id="dEmail" 
+                name="dEmail"
                 required
               />
             </div>
             <div class="mb-3">
-              <label for="pPassword" class="form-label">Password</label>
+              <label for="dPassword" class="form-label">Password</label>
               <input
                 type="password"
                 class="form-control"
-                id="pPassword"
-                name="pPassword"
+                id="dPassword"
+                name="dPassword"
                 required
               />
             </div>
             <div class="mb-3">
-              <label for="pConfirmPassword" class="form-label"
+              <label for="dConfirmPassword" class="form-label"
                 >Confirm Password</label
               >
               <input
                 type="password"
                 class="form-control"
-                id="pConfirmPassword"
-                name="pConfirmPassword"
+                id="dConfirmPassword"
+                name="dConfirmPassword"
                 required
               />
             </div>
@@ -116,12 +116,12 @@
             </button>
           </form>
           <p class="mt-2 text-center">
-            Already have an account? <a href="/patient/p_login.html">Login</a>
+            Already have an account? <a href="/donor/d_login.html">Login</a>
           </p>
         </div>
       </div>
     </div>
-    <!-- patient signup e-->
+    <!-- donor signup e-->
 
 
     <!-- bootstrap cdn s-->
@@ -131,6 +131,6 @@
       crossorigin="anonymous"
     ></script>
     <!-- bootstrap cdn e-->
-     <script src="/js/p_signup.js"></script>
+     <script src="/js/donor/d_signup.js"></script>
   </body>
 </html>

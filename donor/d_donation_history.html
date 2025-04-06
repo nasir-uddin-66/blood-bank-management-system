@@ -30,7 +30,7 @@
     <!-- navbar start -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary nav_bar">
       <div class="container-fluid ps-5 pe-5 nav_container">
-        <a class="navbar-brand ms-5" href="#" id="pWelcome"
+        <a class="navbar-brand ms-5" href="#" id="dWelcome"
           >Quantum Blood Lab <i class="fa-solid fa-droplet"></i
         ></a>
 
@@ -43,6 +43,7 @@
 
     <!--  dashboard-container s-->
     <div class="dashboardContainer d-flex">
+
       <!-- sidebar start -->
       <div class="sidebar bg-dark text-white text-center">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -51,27 +52,27 @@
               class="nav-link"
               id="p-dash-txt"
               aria-current="page"
-              href="/patient/p_dashboard.html"
+              href="/donor/d_dashboard.html"
               >Dashboard</a
             >
           </li>
           <li class="nav-item p-2 border-bottom border-secondary">
-            <a class="nav-link" href="/patient/p_profile.html">Profile</a>
+            <a class="nav-link" href="/donor/d_profile.html">Profile</a>
           </li>
           <li class="nav-item p-2 border-bottom border-secondary">
-            <a class="nav-link" href="/patient/p_blood_req.html"
-              >Blood Request</a
+            <a class="nav-link" href="/donor/d_donate_blood.html"
+              >Donate Blood</a
             >
           </li>
 
           <li class="nav-item p-2 border-bottom border-secondary">
-            <a class="nav-link" href="/patient/p_request_history.html"
-              >Request History</a
+            <a class="nav-link" href="/donor/d_donation_history.html"
+              >Donation History</a
             >
           </li>
 
           <li class="nav-item p-2 border-bottom border-secondary">
-            <a class="nav-link" href="/patient/p_change_pass.html">Change Password</a>
+            <a class="nav-link" href="/donor/d_change_pass.html">Change Password</a>
           </li>
         </ul>
       </div>
@@ -80,7 +81,7 @@
       <!-- main content s -->
       <div class="main-content">
 
-        <div class="text-center fs-4 text-muted mb-4 fw-bold">Blood Request History</div>
+        <div class="text-center fs-4 text-muted mb-4 fw-bold">Blood Donation History</div>
 
         <table class="m-auto table border">
           <thead class="table-dark">
@@ -88,17 +89,19 @@
               <th>Date</th>
               <th>Blood Group</th>
               <th>Quantity (in ml)</th>
-              <th>Reason</th>
+              <th>Disease (if any)</th>
               <th>Status</th>
             </tr>
           </thead>
 
-          <tbody id="pHistoryTable">
+          <tbody id="dHistoryTable">
             <!-- data will be added dynamically -->
           </tbody>
         </table>
+
       </div>
       <!-- main content e  -->
+
     </div>
     <!--  dashboard-container e-->
 
@@ -110,6 +113,6 @@
     ></script>
     <!-- bootstrap cdn e-->
      <script src="/js/logout.js"></script>
-    <script src="/js/p_request_history.js"></script>
+    <script src="/js/donor/d_donation_history.js"></script>
   </body>
 </html>

@@ -22,13 +22,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="/assets/logo.png" />
     <title>Quantum Blood Lab</title>
   </head>
   <body>
-    <header>
-      <!-- navbar start -->
+     <!-- navbar start -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary nav_bar">
         <div class="container-fluid nav_container">
           <a class="navbar-brand" href="#"
@@ -38,14 +37,14 @@
           <div>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/patient/p_login.html">Patient</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="/donor/d_login.html">Donor</a>
+                <a class="nav-link active" href="/donor/d_login.html">Donor</a>
               </li>
 
               <li class="nav-item">
@@ -59,28 +58,46 @@
         </div>
       </nav>
       <!-- navbar end -->
-    </header>
 
-    <main>
-      <div class="body_container">
-        <div>
-          <h1>Welcome!</h1>
-          <p>
-            "Every drop of blood you donate is a gift of life, hope, and
-            strength to someone in need. It takes just a few minutes of your
-            time, but it can mean a lifetime for another. You may never know the
-            person who receives your blood, but your kindness will forever be a
-            part of their journey. Be the reason someone gets a second
-            chance—donate blood, save lives!" ❤️💉
+      <!-- login form start -->
+    <div
+      class="container d-flex justify-content-center align-items-center mt-5"
+    >
+      <div class="card p-3" style="width: 23rem">
+        <div class="card-body">
+          <h5 class="card-title text-center">Donor Login</h5>
+          <form id="dLoginForm">
+            <div class="mb-3">
+              <label for="dLoginEmail" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="dLoginEmail"
+                name="email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="dLoginPassword" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="dLoginPassword"
+                name="password"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+              Login
+            </button>
+          </form>
+          <p class="mt-2 text-center">
+            Don't have an account? <a href="/donor/d_signup.html">Sign up</a>
           </p>
         </div>
-        <div class="home_img"></div>
       </div>
-    </main>
-
-    <footer>
-        <h2>Donate Today <i class="fa-solid fa-droplet"></i></h2>
-    </footer>
+    </div>
+    <!-- login form end -->
 
     <!-- bootstrap cdn s-->
     <script
@@ -89,5 +106,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- bootstrap cdn e-->
+    <!-- <script src="/js/login.js"></script> -->
+     <script src="/js/donor/d_login.js"></script>
   </body>
 </html>
