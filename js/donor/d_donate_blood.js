@@ -99,12 +99,19 @@ document.getElementById("bd-form").addEventListener("submit", (event) => {
   let phone = document.getElementById("bd-phone").value;
   let donated = document.getElementById("bd-donated").value;
   let donationDate = document.getElementById("bd-date").value;
+  let datenTime = document.getElementById("bd-datenTime").value;
 
-    if (bloodGrp !== "Enter Blood Group") {
-      if (donated == "Yes" && donationDate == "") {
-          alert("Please enter last donation date!");
-          return;
-      }
+  let bdDateTime = new Date(datenTime);
+
+  // Extract the date and time separately
+  const date = bdDateTime.toLocaleDateString(); // Formats the date
+  const time = bdDateTime.toLocaleTimeString(); // Formats the time
+
+  if (bloodGrp !== "Enter Blood Group") {
+    if (donated == "Yes" && donationDate == "") {
+      alert("Please enter last donation date!");
+      return;
+    }
     //will be stored in db
     console.log(`Name: ${fName} ${lName}`);
     console.log(`Age: `, age);
@@ -116,8 +123,10 @@ document.getElementById("bd-form").addEventListener("submit", (event) => {
     console.log(`Phone: `, phone);
     console.log(`Donated Before?: `, donated);
     console.log(`Donated Before on: `, donationDate);
+    console.log(`Be present on: `, date, " at: ", time);
     alert("Blood Donation Request Submitted!");
   } else {
     alert("Input All Fields!");
   }
 });
+

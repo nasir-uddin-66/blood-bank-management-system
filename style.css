@@ -119,16 +119,30 @@ footer h2 {
   transition: left 0.3s ease-in-out 0s;
 }
 
-
 /* history table  */
 table {
-    border: 2px solid black;
-    border-collapse: collapse;
-    width: 50%;
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 50%;
 }
 
-th, td {
-    border: 2px solid black;
-    padding: 10px;
-    text-align: center;
+th,
+td {
+  border: 2px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+/* contact us */
+
+.contact-box {
+  box-shadow: 2px 2px 5px black;
+}
+
+.contact-info {
+  transition: transform 0.1s ease-in-out;
+}
+
+.contact-info:hover {
+  transform: scale(1.1);
 }
