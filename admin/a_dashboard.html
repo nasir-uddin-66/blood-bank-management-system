@@ -55,18 +55,18 @@
             >
           </li>
           <li class="nav-item p-2 border-bottom border-secondary">
-            <a class="nav-link" href="">Profile</a>
+            <a class="nav-link" href="">#</a>
           </li>
           <li class="nav-item p-2 border-bottom border-secondary">
-            <a class="nav-link" href="">Donate Blood</a>
-          </li>
-
-          <li class="nav-item p-2 border-bottom border-secondary">
-            <a class="nav-link" href="">Donation History</a>
+            <a class="nav-link" href="">#</a>
           </li>
 
           <li class="nav-item p-2 border-bottom border-secondary">
-            <a class="nav-link" href="">Change Password</a>
+            <a class="nav-link" href="">#</a>
+          </li>
+
+          <li class="nav-item p-2 border-bottom border-secondary">
+            <a class="nav-link" href="">#</a>
           </li>
         </ul>
       </div>
@@ -74,52 +74,115 @@
 
       <!-- main content s -->
       <div class="main-content">
-
         <!-- grid start  -->
+
         <div class="container">
-           <!-- 1st row  -->
-          <div class="row gap-5 mt-5">
-            
-            <div class="info-box col">
+          <!-- 1st row  -->
+
+          <div class="row gap-4">
+            <div class="info-box col b-stk">
               <div class="fs-1 mt-2 text-primary">
-                <i class="fa-solid fa-hand-holding-droplet"></i>
+                <i class="fa-solid fa-droplet text-danger"></i>
               </div>
-              <p class="mt-3">Request Made: <b id="made-req"></b></p>
+              <p class="mt-3 fw-bold">A+ : <b id="bStock-Ap"></b> ml</p>
             </div>
 
-            <div class="info-box col">
+            <div class="info-box col b-stk">
               <div class="fs-1 mt-2 text-primary">
-                <i class="fa-solid fa-spinner"></i>
+                <i class="fa-solid fa-droplet text-danger"></i>
               </div>
-              <p class="mt-3">Pending Request: <b id="pen-req"></b></p>
+              <p class="mt-3 fw-bold">A- : <b id="bStock-An"></b> ml</p>
             </div>
 
+            <div class="info-box col b-stk">
+              <div class="fs-1 mt-2 text-primary">
+                <i class="fa-solid fa-droplet text-danger"></i>
+              </div>
+              <p class="mt-3 fw-bold">B+ : <b id="bStock-Bp"></b> ml</p>
+            </div>
+
+            <div class="info-box col b-stk">
+              <div class="fs-1 mt-2 text-primary">
+                <i class="fa-solid fa-droplet text-danger"></i>
+              </div>
+              <p class="mt-3 fw-bold">B- : <b id="bStock-Bn"></b> ml</p>
+            </div>
           </div>
+
           <!-- 2nd row  -->
-           <div class="row gap-5 mt-5">
-            
-            <div class="info-box col">
+
+          <div class="row gap-4 mt-3">
+            <div class="info-box col b-stk">
               <div class="fs-1 mt-2 text-primary">
-                <i class="fa-regular fa-circle-check"></i>
+                <i class="fa-solid fa-droplet text-danger"></i>
               </div>
-              <p class="mt-3">Approved Request: <b id="app-req"></b></p>
+              <p class="mt-3 fw-bold">AB+ : <b id="bStock-ABp"></b> ml</p>
             </div>
 
-            <div class="info-box col">
+            <div class="info-box col b-stk">
               <div class="fs-1 mt-2 text-primary">
-                <i class="fa-regular fa-circle-xmark"></i>
+                <i class="fa-solid fa-droplet text-danger"></i>
               </div>
-              <p class="mt-3">Rejected Request: <b id="rej-req"></b></p>
+              <p class="mt-3 fw-bold">AB- : <b id="bStock-ABn"></b> ml</p>
             </div>
 
+            <div class="info-box col b-stk">
+              <div class="fs-1 mt-2 text-primary">
+                <i class="fa-solid fa-droplet text-danger"></i>
+              </div>
+              <p class="mt-3 fw-bold">O+ : <b id="bStock-Op"></b> ml</p>
+            </div>
+
+            <div class="info-box col b-stk">
+              <div class="fs-1 mt-2 text-primary">
+                <i class="fa-solid fa-droplet text-danger"></i>
+              </div>
+              <p class="mt-3 fw-bold">O- : <b id="bStock-On"></b> ml</p>
+            </div>
           </div>
-
         </div>
         <!-- grid end -->
 
+        <!-- update bstock s-->
+
+        <div
+          class="mt-4 p-3 rounded w-100 m-auto info-box b-stk"
+          style="height: auto !important"
+        >
+          <p class="text-center">Update Blood Stock :</p>
+
+          <div class="d-flex w-50 m-auto mt-3 gap-5">
+            <select
+              name="BStock-select"
+              id="BStock-select"
+              class="form-select w-50 border-black"
+              style="background-color: rgb(240, 240, 233);"
+            >
+              <option value="Ap">A+</option>
+              <option value="An">A-</option>
+              <option value="Bp">B+</option>
+              <option value="Bn">B-</option>
+              <option value="ABp">AB+</option>
+              <option value="ABn">AB-</option>
+              <option value="Op">O+</option>
+              <option value="On">O-</option>
+            </select>
+
+            <input
+              type="number"
+              class="form-control"
+              id="BStock-quantity"
+              placeholder="quantity (in ml)"
+              style="width: 10rem"
+            />
+
+            <button class="btn btn-danger" id="BStock-upBtn">Update</button>
+          </div>
+        </div>
+
+        <!-- update bstock e-->
       </div>
       <!-- main content e  -->
-
     </div>
     <!--  dashboard-container e-->
 
