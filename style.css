@@ -146,3 +146,13 @@ td {
 .contact-info:hover {
   transform: scale(1.1);
 }
+
+/* blood stock */
+
+.b-stk {
+  transition: transform 0.1s ease;
+}
+
+.b-stk:hover {
+  transform: scale(1.05);
+}
