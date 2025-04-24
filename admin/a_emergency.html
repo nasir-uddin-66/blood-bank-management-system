@@ -26,11 +26,11 @@
     <link rel="icon" href="/assets/logo.png" />
     <title>Quantum Blood Lab</title>
   </head>
-  <body style="overflow: hidden">
+  <body class="overflow-hidden">
     <!-- navbar start -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary nav_bar">
       <div class="container-fluid ps-5 pe-5 nav_container">
-        <a class="navbar-brand ms-5" href="#" id="dWelcome"
+        <a class="navbar-brand ms-5" href="#" id="aWelcome"
           >Quantum Blood Lab <i class="fa-solid fa-droplet"></i
         ></a>
 
@@ -43,40 +43,34 @@
 
     <!--  dashboard-container s-->
     <div class="dashboardContainer d-flex">
-
       <!-- sidebar start -->
       <div class="sidebar bg-dark text-white text-center">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item p-2 border-bottom border-secondary active-li">
             <a
               class="nav-link"
-              id="p-dash-txt"
               aria-current="page"
-              href="/donor/d_dashboard.html"
+              href="/admin/a_dashboard.html"
               >Dashboard</a
             >
           </li>
-           <li class="nav-item p-2 border-bottom border-secondary">
-            <a class="nav-link" href="/donor/d_profile.html">Profile</a>
+          <li class="nav-item p-2 border-bottom border-secondary">
+            <a class="nav-link" href="/admin/a_blood_req.html">Blood Requests</a>
           </li>
           <li class="nav-item p-2 border-bottom border-secondary">
-            <a class="nav-link" href="/donor/d_donate_blood.html">Donate Blood</a>
-          </li>
-
-          <li class="nav-item p-2 border-bottom border-secondary">
-            <a class="nav-link" href="/donor/d_donation_history.html">Donation History</a>
+            <a class="nav-link" href="/admin/a_donation_req.html">Donation Requests</a>
           </li>
 
           <li class="nav-item p-2 border-bottom border-secondary">
-            <a class="nav-link" href="/donor/d_blood_req.html">Request Blood</a>
+            <a class="nav-link" href="/admin/a_bld_req_hisory.html">Blood Requests History</a>
           </li>
 
           <li class="nav-item p-2 border-bottom border-secondary">
-            <a class="nav-link" href="/donor/d_req_history.html">Request History</a>
+            <a class="nav-link" href="/admin/a_don_history.html">Blood Donation History</a>
           </li>
 
           <li class="nav-item p-2 border-bottom border-secondary">
-            <a class="nav-link" href="/donor/d_change_pass.html">Change Password</a>
+            <a class="nav-link" href="/admin/a_emergency.html">Emergency Requests</a>
           </li>
         </ul>
       </div>
@@ -84,28 +78,32 @@
 
       <!-- main content s -->
       <div class="main-content">
+        
+        <!-- blood req history s-->
 
-        <div class="text-center fs-4 text-muted mb-4 fw-bold">Blood Donation History</div>
+          <h4 class="mb-4">EMERGENCY  REQUESTS !</h4>
+            <table class="table table-bordered table-striped table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Request ID</th>
+                        <th>Name</th>
+                        <th>Blood Group</th>
+                        <th>Hospital</th>
+                        <th>Phone</th>
+                        <th>Status</th>
+                        <th>Request Time</th>
+                    </tr>
+                </thead>
+                <tbody id="emergencyTableBody">
+                    <!-- Filled by JavaScript -->
+                </tbody>
+            </table>
+         
+        <!-- blood req history e-->
 
-        <table class="m-auto table border">
-          <thead class="table-dark">
-            <tr>
-              <th>Date</th>
-              <th>Blood Group</th>
-              <th>Quantity (in ml)</th>
-              <th>Disease (if any)</th>
-              <th>Status</th>
-            </tr>
-          </thead>
-
-          <tbody id="dHistoryTable">
-            <!-- data will be added dynamically -->
-          </tbody>
-        </table>
-
+        
       </div>
       <!-- main content e  -->
-
     </div>
     <!--  dashboard-container e-->
 
@@ -116,7 +114,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- bootstrap cdn e-->
-     <script src="/js/logout.js"></script>
-    <script src="/js/donor/d_donation_history.js"></script>
+    <script src="/js/logout.js"></script>
+    
   </body>
 </html>

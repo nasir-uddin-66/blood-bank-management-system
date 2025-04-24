@@ -43,7 +43,7 @@
 
     <!--  dashboard-container s-->
     <div class="dashboardContainer d-flex">
-      <!-- sidebar start -->
+     <!-- sidebar start -->
       <div class="sidebar bg-dark text-white text-center">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item p-2 border-bottom border-secondary active-li">
@@ -55,7 +55,7 @@
               >Dashboard</a
             >
           </li>
-           <li class="nav-item p-2 border-bottom border-secondary">
+          <li class="nav-item p-2 border-bottom border-secondary">
             <a class="nav-link" href="/donor/d_profile.html">Profile</a>
           </li>
           <li class="nav-item p-2 border-bottom border-secondary">
@@ -83,30 +83,30 @@
 
       <!-- main content s -->
       <div class="main-content">
-        <!-- blood donation form s -->
+        <!-- blood request form s -->
         <div class="bg-white p-5 m-auto border-50 rounded" style="width: 40rem">
-          <h5 class="text-center mb-5">Blood Donation Form</h5>
+          <h5 class="text-center mb-5">Blood Request Form</h5>
 
-          <form id="bd-form">
+          <form id="br-form">
             <div class="d-flex justify-content-around">
               <div>
-                <label for="bd-fName" class="form-label">First Name:</label>
+                <label for="br-fName" class="form-label">First Name:</label>
                 <input
                   type="text"
                   class="form-control"
-                  name="bd-fName"
-                  id="bd-fName"
+                  name="br-fName"
+                  id="br-fName"
                   required
                 />
               </div>
 
               <div>
-                <label for="bd-lName" class="form-label">Last Name:</label>
+                <label for="br-lName" class="form-label">Last Name:</label>
                 <input
                   type="text"
                   class="form-control"
-                  name="bd-lName"
-                  id="bd-lName"
+                  name="br-lName"
+                  id="br-lName"
                   required
                 />
               </div>
@@ -114,12 +114,12 @@
 
             <div class="d-flex justify-content-around mt-3">
               <div>
-                <label for="bd-age" class="form-label">Age:</label>
+                <label for="br-age" class="form-label">Age:</label>
                 <input
                   type="number"
                   class="form-control"
-                  name="bd-age"
-                  id="bd-age"
+                  name="br-age"
+                  id="br-age"
                   required
                 />
               </div>
@@ -133,44 +133,44 @@
                 >
                   <input
                     type="radio"
-                    name="bd-gender"
-                    id="bd-male"
+                    name="br-gender"
+                    id="br-male"
                     class="ms-4"
                     value="male"
                     required
                   />
-                  <label for="bd-male">Male</label>
+                  <label for="br-male">Male</label>
 
                   <input
                     type="radio"
-                    name="bd-gender"
-                    id="bd-female"
+                    name="br-gender"
+                    id="br-female"
                     value="female"
                     class="ms-4"
                     required
                   />
-                  <label for="bd-female">Female</label>
+                  <label for="br-female">Female</label>
                 </div>
               </div>
             </div>
 
-            <div class="d-flex justify-content-around mt-4">
+            <div class="d-flex justify-content-around mt-3">
               <div>
-                <label for="bd-email" class="form-label">Email:</label>
+                <label for="br-email" class="form-label">Email:</label>
                 <input
                   type="email"
                   class="form-control"
-                  name="bd-email"
-                  id="bd-email"
+                  name="br-email"
+                  id="br-email"
                   readonly
                 />
               </div>
 
               <div>
-                <label for="bd-bloodGrp" class="form-label">Blood Group:</label>
+                <label for="br-bloodGrp" class="form-label">Blood Group:</label>
                 <select
                   class="form-select"
-                  id="bd-bloodGrp"
+                  id="br-bloodGrp"
                   style="width: 13.5rem"
                 >
                   <option disabled selected>Enter Blood Group</option>
@@ -187,30 +187,30 @@
             </div>
 
             <div
-              class="d-flex justify-content-around mt-4 gap-4"
+              class="d-flex justify-content-around mt-3 gap-4"
               style="padding: 0 1.75rem"
             >
               <div class="w-75">
-                <label for="bd-disease" class="form-label"
-                  >Medical history (if any):</label
+                <label for="br-reason" class="form-label"
+                  >Reason of Blood Request:</label
                 >
                 <input
                   type="text"
-                  name="bd-disease"
-                  id="bd-disease"
+                  name="br-reason"
+                  id="br-reason"
                   class="form-control"
                   required
                 />
               </div>
 
               <div>
-                <label for="bd-quantity" class="form-label"
+                <label for="br-quantity" class="form-label"
                   >Quantity (in ml):</label
                 >
                 <input
                   type="number"
-                  name="bd-quantity"
-                  id="bd-quantity"
+                  name="br-quantity"
+                  id="br-quantity"
                   class="form-control"
                   required
                 />
@@ -219,66 +219,44 @@
 
             <div class="d-flex justify-content-around mt-3">
               <div>
-                <label for="bd-address" class="form-label">Address:</label>
+                <label for="br-address" class="form-label">Address:</label>
                 <input
                   type="text"
                   class="form-control"
-                  name="bd-address"
-                  id="bd-address"
+                  name="br-address"
+                  id="br-address"
                   required
                 />
               </div>
 
               <div>
-                <label for="bd-phone" class="form-label">Phone:</label>
+                <label for="br-phone" class="form-label">Phone:</label>
                 <input
                   type="text"
                   class="form-control"
-                  name="bd-phone"
-                  id="bd-phone"
+                  name="br-phone"
+                  id="br-phone"
                   required
                 />
               </div>
             </div>
 
-            <div class="d-flex justify-content-around mt-3">
-              <div>
-                <label for="bd-donated" class="form-label"
-                  >Have you donated before? :</label
-                >
-                <select
-                  class="form-select"
-                  id="bd-donated"
-                  style="width: 13.5rem"
-                >
-                  <option>Yes</option>
-                  <option>No</option>
-                </select>
-              </div>
-
-              <div>
-                <label for="bd-date" class="form-label"
-                  >Last donation date (if yes):</label
-                >
-                <input
-                  type="date"
-                  class="form-control"
-                  style="width: 13.5rem"
-                  name="bd-date"
-                  id="bd-date"
-                />
-              </div>
+            <div class="mt-3" style="padding: 0 1.75rem">
+              <label for="br-description" class="form-label"
+                >Description:</label
+              >
+              <input
+                type="text"
+                name="br-description"
+                id="br-description"
+                placeholder="optional"
+                class="form-control"
+              />
             </div>
-
-            <div class="my-4" style="padding: 0 5.75rem">
-              <label for="bd-datenTime" class="form-label">Prefered date & time for blood donation :</label>
-              <input type="datetime-local" id="bd-datenTime" class="form-control" required>
-            </div>
-
 
             <div class="d-flex justify-content-center my-3">
               <button
-                class="bd-submit-btn btn btn-primary w-25 mt-3"
+                class="br-submit-btn btn btn-primary w-25 mt-3"
                 type="submit"
               >
                 Submit
@@ -286,7 +264,7 @@
             </div>
           </form>
         </div>
-        <!-- blood donation form e -->
+        <!-- blood request form e -->
       </div>
       <!-- main content e  -->
     </div>
@@ -300,6 +278,6 @@
     ></script>
     <!-- bootstrap cdn e-->
     <script src="/js/logout.js"></script>
-    <script src="/js/donor/d_donate_blood.js"></script>
+    <script src="/js/donor/d_blood_req.js"></script>
   </body>
 </html>

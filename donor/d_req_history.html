@@ -26,7 +26,7 @@
     <link rel="icon" href="/assets/logo.png" />
     <title>Quantum Blood Lab</title>
   </head>
-  <body style="overflow: hidden">
+  <body class="overflow-hidden">
     <!-- navbar start -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary nav_bar">
       <div class="container-fluid ps-5 pe-5 nav_container">
@@ -43,7 +43,6 @@
 
     <!--  dashboard-container s-->
     <div class="dashboardContainer d-flex">
-
       <!-- sidebar start -->
       <div class="sidebar bg-dark text-white text-center">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -56,7 +55,7 @@
               >Dashboard</a
             >
           </li>
-           <li class="nav-item p-2 border-bottom border-secondary">
+          <li class="nav-item p-2 border-bottom border-secondary">
             <a class="nav-link" href="/donor/d_profile.html">Profile</a>
           </li>
           <li class="nav-item p-2 border-bottom border-secondary">
@@ -85,7 +84,8 @@
       <!-- main content s -->
       <div class="main-content">
 
-        <div class="text-center fs-4 text-muted mb-4 fw-bold">Blood Donation History</div>
+        <!-- req his s-->
+          <div class="text-center fs-4 text-muted mb-4 fw-bold">Blood Request History</div>
 
         <table class="m-auto table border">
           <thead class="table-dark">
@@ -93,15 +93,16 @@
               <th>Date</th>
               <th>Blood Group</th>
               <th>Quantity (in ml)</th>
-              <th>Disease (if any)</th>
+              <th>Reason</th>
               <th>Status</th>
             </tr>
           </thead>
 
-          <tbody id="dHistoryTable">
+          <tbody id="pHistoryTable">
             <!-- data will be added dynamically -->
           </tbody>
         </table>
+        <!-- req his e-->
 
       </div>
       <!-- main content e  -->
@@ -116,7 +117,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- bootstrap cdn e-->
-     <script src="/js/logout.js"></script>
-    <script src="/js/donor/d_donation_history.js"></script>
+    <script src="/js/logout.js"></script>
+    <script src="/js/donor/d_req_history.js"></script>
   </body>
 </html>
