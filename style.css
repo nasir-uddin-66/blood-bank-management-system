@@ -3,7 +3,8 @@
 }
 
 body {
-  background-color: #decaca;
+  background-image: url("assets/bg-img.jpg");
+  background-size: cover;
 }
 
 /* home page */
@@ -13,7 +14,7 @@ body {
 }
 
 .nav_container {
-  background-color: #bf1d1d;
+  background-color: #880b0b;
   padding: 8px 28px;
 }
 
