@@ -85,8 +85,9 @@
       <div class="main-content d-flex">
         <!-- show user info s -->
         <div
-          class="profile-box1 bg-white h-75 w-50 p-5 text-center d-flex flex-column justify-content-around border-50 rounded"
+          class="profile-box1 bg-white w-50 p-5 text-center d-flex flex-column justify-content-around border-50 rounded"
           id="profile-box1"
+          style="height: 28rem"
         >
           <i class="fa-regular fa-circle-user fs-1 text-primary"></i>
           <div class="text-start ps-5">
@@ -106,6 +107,17 @@
               Blood Group:
               <p id="d-profile-bloodGrp" class="d-inline"></p>
             </h5>
+
+            <h5>
+              Address:
+              <p id="d-profile-address" class="d-inline"></p>
+            </h5>
+
+            <h5>
+              Phone:
+              <p id="d-profile-phone" class="d-inline"></p>
+            </h5>
+
           </div>
           <button id="dInfoUpdate" class="btn btn-outline-primary w-75 mx-auto">
             Update Information <i class="fa-solid fa-pen-to-square"></i>
@@ -115,10 +127,10 @@
 
         <!-- update user info s -->
         <div
-          class="profile-box2 bg-white w-50 px-5 my-3 text-center d-flex flex-column justify-content-around border-50 rounded"
+          class="profile-box2 bg-white w-50 px-5 py-1 my-3 text-center d-flex flex-column justify-content-around border-50 rounded"
           id="profile-box2"
         >
-          <i class="fa-regular fa-circle-user fs-1 text-primary"></i>
+          <i class="fa-regular fa-circle-user mt-1 fs-1 text-primary"></i>
           <form class="text-start" id="dUpdateForm">
             <label for="dUpdateEmail" class="form-label">Email address:</label>
             <input
@@ -150,7 +162,7 @@
               <label for="dUpdateBloodGrp" class="form-label mt-2"
                 >Blood Group:</label
               >
-              <select class="form-control" id="dUpdateBloodGrp" required>
+              <select class="form-select" id="dUpdateBloodGrp" required>
                 <option disabled selected>Enter Blood Group</option>
                 <option>A+</option>
                 <option>A-</option>
@@ -162,7 +174,32 @@
               </select>
             </div>
 
-            <div class="d-flex gap-3 mt-4">
+            <div class="d-flex justify-content-center gap-2">
+              <div>
+                <label for="dUpdateAddress" class="form-label mt-2">Address:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="dUpdateAddress"
+                  placeholder="Enter Address"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="dUpdatePhone" class="form-label mt-2"
+                  >Phone:</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="dUpdatePhone"
+                  placeholder="Enter Phone"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="d-flex gap-3 mt-3 mb-2">
             <button class="cancelBtn btn btn-outline-primary w-50 mx-auto">
               Cancel <i class="fa-regular fa-circle-xmark"></i>
             </button>

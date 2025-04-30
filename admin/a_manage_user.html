@@ -45,7 +45,7 @@
     <div class="dashboardContainer d-flex">
       <!-- sidebar start -->
       <div class="sidebar bg-dark text-white text-center">
-         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item p-2 border-bottom border-secondary active-li">
             <a
               class="nav-link"
@@ -83,54 +83,46 @@
       <!-- main content s -->
       <div class="main-content">
         
-        <!-- blood req table s-->
-         <h4 class="mb-4">Requests for Blood :</h4>
+        <!-- manage user s-->
+
+          <h4 class="mb-4">Manage User:</h4>
             <table class="table table-bordered table-striped table-hover">
                 <thead class="table-dark">
                     <tr>
-                        <th>ID</th>
                         <th>Name</th>
+                        <th>User Type</th>
                         <th>Blood Group</th>
-                        <th>Email</th>
                         <th>Phone</th>
-                        <th>Last Request</th>
-                        <th>Status</th>
-                        <th>Action</th>
+                        <th>Address</th>
+                        <th>Registration Date</th>
+                        <th>Manage</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Example row -->
-                    <tr>
-                        <td>101</td>
-                        <td>Jannatul Ferdous</td>
-                        <td>O+</td>
-                        <td>janna@example.com</td>
-                        <td>017xxxxxxxx</td>
-                        <td>2025-04-10</td>
-                        <td><span class="badge bg-info text-dark">Pending</span></td>
-                        <td class="d-flex gap-1 align-items-center" style="height: 4rem;">
-                            <button class="btn btn-primary h-75">Accept</button>
-                            <button class="btn btn-danger h-75">Reject</button>
-                        </td>
+                  <tr>
+                      <td>Nasir Uddin</td>
+                      <td>Donor</td>
+                      <td>A+</td>
+                      <td>01300123855</td>
+                      <td>Uttara, Dhaka</td>
+                      <td>10-03-25</td>
+                      <td><button class="btn btn-danger">Delete</button></td>
                     </tr>
 
-                    <tr style="border-top: 1.5px solid black;">
-                        <td>102</td>
-                        <td>Nasir Uddin</td>
-                        <td>O+</td>
-                        <td>nasir@example.com</td>
-                        <td>017xxxxxxxx</td>
-                        <td>2025-04-10</td>
-                        <td><span class="badge bg-info text-dark">Pending</span></td>
-                        <td class="d-flex gap-1 align-items-center" style="height: 4rem;">
-                            <button class="btn btn-primary h-75">Accept</button>
-                            <button class="btn btn-danger h-75">Reject</button>
-                        </td>
+                    <tr>
+                      <td>Shimu Mallick</td>
+                      <td>Patient</td>
+                      <td>A+</td>
+                      <td>01300123855</td>
+                      <td>Uttara, Dhaka</td>
+                      <td>06-02-25</td>
+                      <td><button class="btn btn-danger">Delete</button></td>
                     </tr>
-                    <!-- Add more dynamically -->
+                    <!-- Filled by JavaScript -->
                 </tbody>
             </table>
-        <!-- blood req table e-->
+         
+        <!-- manage user e-->
 
         
       </div>
@@ -146,6 +138,6 @@
     ></script>
     <!-- bootstrap cdn e-->
     <script src="/js/logout.js"></script>
-    <script src="/"></script>
+    
   </body>
 </html>

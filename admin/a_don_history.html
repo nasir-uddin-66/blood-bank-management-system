@@ -45,7 +45,7 @@
     <div class="dashboardContainer d-flex">
       <!-- sidebar start -->
       <div class="sidebar bg-dark text-white text-center">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item p-2 border-bottom border-secondary active-li">
             <a
               class="nav-link"
@@ -59,6 +59,10 @@
           </li>
           <li class="nav-item p-2 border-bottom border-secondary">
             <a class="nav-link" href="/admin/a_donation_req.html">Donation Requests</a>
+          </li>
+
+          <li class="nav-item p-2 border-bottom border-secondary">
+            <a class="nav-link" href="/admin/a_manage_user.html">Manage User</a>
           </li>
 
           <li class="nav-item p-2 border-bottom border-secondary">
@@ -124,7 +128,7 @@
             const requests = [
                 {
                     id: 1,
-                    type: "Patient",
+                    type: "Donor",
                     name: "Sadia Akter",
                     bloodGroup: "A+",
                     amount: 500,
@@ -142,7 +146,7 @@
                 },
                 {
                     id: 3,
-                    type: "Patient",
+                    type: "Donor",
                     name: "Mitu Khan",
                     bloodGroup: "B-",
                     amount: 600,
