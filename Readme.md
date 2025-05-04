@@ -1,14 +1,14 @@
-## Blood Bank Management System
+# Blood Bank Management System
 
-# Patient:
+## Patient:
     Email: patient@gmail.com
     Pass: 1234
 
-# Donor:
+## Donor:
     Email: donor@gmail.com
     Pass: 1234
 
-# Admin:
+## Admin:
     Email: admin@gmail.com
     Username: admin
     Pass: 1234
