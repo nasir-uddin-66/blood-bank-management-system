@@ -1,3 +1,9 @@
+// check if donor is logged in
+let isLoggedIn = localStorage.getItem("isLoggedIn");
+if (isLoggedIn != "true") {
+  window.location.href = "d_login.html";
+}
+
 document.getElementById("dWelcome").innerText = "Welcome Donor";
 
 // sample data will be replaced by backend data

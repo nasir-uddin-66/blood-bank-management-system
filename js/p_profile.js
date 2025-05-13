@@ -1,41 +1,10 @@
-// window.onload = function () {
-//   let isLoggedIn = localStorage.getItem("isLoggedIn");
-//   let currentUserEmail = localStorage.getItem("currentUser"); // Get current user's email
+// Check if the user is logged in
+// If not, redirect to the login page;
 
-//   if (isLoggedIn !== "true" || !currentUserEmail) {
-//     window.location.href = "login.html"; // Redirect if not logged in
-//   }
-
-//   let userData = localStorage.getItem(currentUserEmail); // Get user details
-//   let user = JSON.parse(userData); // Convert back to object
-
-//   // user info
-//   let welcome = document.getElementById("welcome");
-
-//   if (user) {
-//     welcome.innerText = `Welcome ${user.username}`;
-//   }
-
-//   // Auto logout if the user presses the back button
-//   window.history.pushState(null, null, window.location.href);
-//   window.onpopstate = function () {
-//     localStorage.removeItem("isLoggedIn");
-//     localStorage.removeItem("currentUser");
-//     window.location.href = "login.html";
-//   };
-// };
-
-// // Logout button functionality
-// document.getElementById("logoutBtn").addEventListener("click", function () {
-//   let confirmed = confirm("You will be logged out!");
-//   if (confirmed) {
-//     localStorage.removeItem("isLoggedIn");
-//     localStorage.removeItem("currentUser");
-//     window.location.href = "login.html";
-//   } else {
-//     return;
-//   }
-// });
+let isLoggedIn = localStorage.getItem("isLoggedIn");
+if (isLoggedIn != "true") {
+  window.location.href = "p_login.html";
+}
 
 document.getElementById("pWelcome").innerText = "Welcome Patient";
 
@@ -45,7 +14,8 @@ document.getElementById("p-profile-name").innerText = "User";
 document.getElementById("p-profile-mail").innerText = "User@mail.com";
 document.getElementById("p-profile-age").innerText = "999";
 document.getElementById("p-profile-bloodGrp").innerText = "C+";
-document.getElementById("p-profile-address").innerText = "Sector-10, Uttara, Dhaka";
+document.getElementById("p-profile-address").innerText =
+  "Sector-10, Uttara, Dhaka";
 document.getElementById("p-profile-phone").innerText = "+8801234567896";
 
 // update information

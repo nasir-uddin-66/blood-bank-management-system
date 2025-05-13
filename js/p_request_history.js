@@ -1,3 +1,11 @@
+// Check if the user is logged in
+// If not, redirect to the login page;
+
+let isLoggedIn = localStorage.getItem("isLoggedIn");
+if (isLoggedIn != "true") {
+  window.location.href = "p_login.html";
+}
+
 document.getElementById("pWelcome").innerText = "Welcome Patient";
 
 // sample data will be replaced by backend data

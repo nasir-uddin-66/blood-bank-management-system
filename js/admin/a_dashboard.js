@@ -1,3 +1,5 @@
+// check if admin is logged in
+
 let isLoggedIn = localStorage.getItem("isLoggedIn");
 if (isLoggedIn != "true") {
   window.location.href = "a_login.html";
