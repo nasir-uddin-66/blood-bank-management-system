@@ -36,20 +36,20 @@ The frontend provides interfaces for:
 
 **Patient**:
 ```
-    **Email**: patient@gmail.com
-    **Pass**: 1234
+    Email: patient@gmail.com
+    Pass: 1234
 ```
 
 **Donor**:
 ```
-    **Email**: donor@gmail.com
-    **Pass**: 1234
+    Email: donor@gmail.com
+    Pass: 1234
 ```
 
 
 **Admin**:
 ```
-    **Email**: admin@gmail.com
-    **Username**: admin
-    **Pass**: 1234
+    Email: admin@gmail.com
+    Username: admin
+    Pass: 1234
 ```
